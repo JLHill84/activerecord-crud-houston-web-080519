@@ -62,7 +62,7 @@ def can_find_using_where_clause_and_be_sorted
   # For this test return all movies released after 2002 and ordered by 
   # release date descending
   testVar = Movie.where("release_date > 2002")
-  testVar.order("release_date DESC")
+  return testVar.order("release_date DESC")
 end
 
 def can_be_found_updated_and_saved
